@@ -27,16 +27,21 @@ def juego(minimo, maximo, random, ):
         if numero == random:
             print("has ganado")
             ayuda+=1
+            victoria(ayuda)
         elif numero > random:
             print("El numero es mas pequeño")
             ayuda+=1
             if ayuda == 7:
                 cuestionayuda(minimo, maximo, random)
+            elif ayuda == 10
+                maximointentos()
         elif numero < random:
             print("El numero es mas alto")
             ayuda+=1
             if ayuda == 7:
                 cuestionayuda(minimo, maximo, random)
+            elif ayuda == 10
+                maximointentos()
 
         else:
             return juego(minimo, maximo, random)
@@ -50,6 +55,20 @@ def cuestionayuda(minimo, maximo, naleatorio):
         return juego()
     else:
         return cuestionayuda()
+def maximointentos(minimo, maximo):
+    print("Has perdido. Alcanzaste el numero maximo de intentos.")
+def victoria(ayuda):
+    print("has ganado en", ayuda, "intentos.")
+    Nombre = input ("Ingrese su nombre: ")
+    pregunta2 = input(Nombre, ", ¿Desea volver a jugar?")
+    print(pregunta2)
+    if pregunta2 == "si":
+        lista=[]
+        lista.append(Nombre)
+        print (lista)
+    else:
+        print("Gracias por jugar")
+
         
 
 
