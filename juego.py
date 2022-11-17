@@ -33,14 +33,14 @@ def juego(minimo, maximo, random, ):
             ayuda+=1
             if ayuda == 7:
                 cuestionayuda(minimo, maximo, random)
-            elif ayuda == 10
+            elif ayuda == 10:
                 maximointentos()
         elif numero < random:
             print("El numero es mas alto")
             ayuda+=1
             if ayuda == 7:
                 cuestionayuda(minimo, maximo, random)
-            elif ayuda == 10
+            elif ayuda == 10:
                 maximointentos()
 
         else:
